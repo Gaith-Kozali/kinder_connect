@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 HomeAppbar(),
                 HorizontalHomeCard(),
-                SizedBox(height: 20.h),
+                SizedBox(height: 10.h),
                 Expanded(
                   child: GridView(
                     physics: NeverScrollableScrollPhysics(),

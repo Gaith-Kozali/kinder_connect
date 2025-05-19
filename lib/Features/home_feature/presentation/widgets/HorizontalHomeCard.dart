@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kinder_connect/Cores/data_base.dart';
@@ -59,6 +60,26 @@ class _HorizontalHomeCardState extends State<HorizontalHomeCard> {
                 AppImages.lettersCardImg,
                 width: 220.r,
                 height: 220.r,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned(
+              left: 8.w,
+              bottom: 10.h,
+              child: SvgPicture.asset(
+                AppImages.robotImg,
+                width: 50.r,
+                height: 50.r,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned(
+              left: 60.w,
+              bottom: 30.h,
+              child: SvgPicture.asset(
+                AppImages.earthImg,
+                width: 30.r,
+                height: 30.r,
                 fit: BoxFit.cover,
               ),
             ),

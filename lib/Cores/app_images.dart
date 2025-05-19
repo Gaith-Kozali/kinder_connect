@@ -16,9 +16,13 @@ class AppImages {
   static String handImg = "assets/images/handImg.png";
   static String mapImg = "assets/images/mapImg.png";
   static String forgotPasswordImg = "assets/images/forgot_password_img.png";
+  static String robotImg = "assets/images/robotImg.svg";
+  static String earthImg = "assets/images/earthImg.svg";
   static String chatIcon = "assets/icons/chat_icon.png";
   static String microphoneIcon = "assets/icons/microphone_icon.png";
   static String homeIcon = "assets/icons/home_Icon.png";
   static String paperIcon = "assets/icons/paper_icon.png";
   static String backArrowIcon = "assets/icons/back_arrow_icon.png";
+  static String cleanIcon = "assets/icons/clean.png";
+  static String doneIcon = "assets/icons/done.png";
 }

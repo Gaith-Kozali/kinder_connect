@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:kinder_connect/Cores/app_images.dart';
 import 'package:kinder_connect/Cores/screen_utils.dart';
 import 'package:kinder_connect/Features/home_feature/domain/entities/super_class.dart';
+import 'package:kinder_connect/Features/home_feature/presentation/screens/board_screen.dart';
 import 'package:kinder_connect/Features/home_feature/presentation/screens/model_screen.dart';
 import 'package:kinder_connect/Features/home_feature/presentation/widgets/home_appbar.dart';
 import '../../../../Cores/app_colors.dart';
@@ -19,7 +20,7 @@ class LearningMapScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 25.h),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 15.h),
           child: Column(
             children: [
               HomeAppbar(),
@@ -70,7 +71,12 @@ class LearningMapScreen extends StatelessWidget {
                         height: 130.r,
                         fit: BoxFit.cover,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(
+                          BoardScreen.routeName,
+                          extra: superClass,
+                        );
+                      },
                     ),
                   ),
                   Positioned(
@@ -101,7 +107,12 @@ class LearningMapScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              Spacer(flex: 2),
+              Image.asset(
+                AppImages.handImg,
+                height: 230.r,
+                width: 230.r,
+                fit: BoxFit.fill,
+              ),
             ],
           ),
         ),
